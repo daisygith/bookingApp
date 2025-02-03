@@ -1,11 +1,45 @@
 app-main-page {
   .main-page {
     padding: var(--main_spacing_2px) 0 0 0;
-    max-width: 1140px;
   }
 
   .navigation {
-    background-color: var(--main_bacgkround_color);
+    background-color: var(--main_background_color);
+  }
+
+  .content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 var(--main_spacing_4px);
+  }
+
+  .top-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main_spacing_1px) var(--main_spacing_4px) var(--main_spacing_2px) ;
+  }
+
+  .left-label{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-block-start: var(--main_spacing_2px);
+    padding-inline-end: var(--main_spacing_4px);
+    padding-block-end: var(--main_spacing_2px);
+    padding-inline-start: 0;
+    color: var(--main-background_text_color);
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .right-label, .bottom-label {
+    display: flex;
+    gap: 8px
+  }
+
+  .button-navigation {
+    align-content: center;
   }
 
 }
