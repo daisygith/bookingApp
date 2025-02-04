@@ -43,10 +43,15 @@ $bookingApp-theme: mat.define-light-theme((
   --main_spacing_2px: 8px;
   --main_spacing_4px: 16px;
 
+  //border-radius
+  --radius_button_16px: 32px;
+
 
   //color
   --main_background_color: #003B95;
   --main-background_text_color: #FFFFFF;
+  --text_color_log: #4AC2F8;
+  --text_color: rgba(234, 241, 250, 0.21);
 }
 
 
@@ -55,6 +60,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 //BUTTON
-button.mdc-button.mat-mdc-button{
-  color: var(--main-background_text_color);
+//button {
+//  color: var(--main-background_text_color);
+//}
+
+
+.mdc-button:hover,
+.mdc-button:active{
+  background-color: var(--text_color);
 }

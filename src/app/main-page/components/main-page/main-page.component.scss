@@ -17,7 +17,8 @@ app-main-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--main_spacing_1px) var(--main_spacing_4px) var(--main_spacing_2px) ;
+    padding: var(--main_spacing_1px) var(--main_spacing_4px) var(--main_spacing_2px);
+    height: 48px;
   }
 
   .left-label{
@@ -29,17 +30,38 @@ app-main-page {
     padding-block-end: var(--main_spacing_2px);
     padding-inline-start: 0;
     color: var(--main-background_text_color);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
   }
+
 
   .right-label, .bottom-label {
     display: flex;
     gap: 8px
   }
 
-  .button-navigation {
+  .button-navigation:hover {
     align-content: center;
+    //height: 48px;
   }
+
+  #button-currency, #button-language, #button-help, #button-share{
+    color: var(--main-background_text_color);
+  }
+
+  #button-login, #button-reg{
+    text-align: center;
+    background-color: var(--main-background_text_color);
+    color: var(--text_color_log) !important;
+  }
+//TODO ADD .active when GIVEN type of site will be active
+  //todo border: 1px solid var(--main-background_text_color);
+  #button-bed, #button-airplane, #button-bedPlane, #button-rentCar, #button-trip, #button-taxi{
+    color:var(--main-background_text_color);
+    padding: var(--main_spacing_4px);
+    border-radius: var(--radius_button_16px);
+    height: 45px;
+  }
+
 
 }
