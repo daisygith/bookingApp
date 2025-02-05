@@ -1,65 +1,96 @@
 <div class="main-page navigation">
-<!--  TODO DODAĆ TŁUMACZENIA/ ZROBIC TRANSLATE SERVICE-->
-  <div class="content">
-  <div class="top-label">
-    <div class="left-label">
-      <span>BookingApp</span>
-    </div>
-    <div class="right-label">
-      <div class="button-navigation">
-        <button mat-button id="button-currency">PLN</button>
+  <!--  TODO DODAĆ TŁUMACZENIA/ ZROBIC TRANSLATE SERVICE-->
+  <div class="content-nav">
+    <div class="top-label">
+      <div class="left-label">
+        <span>BookingApp</span>
       </div>
-      <div class="button-navigation">
-        <button mat-button id="button-language">
-          <mat-icon>language</mat-icon>
-        </button>
-      </div>
-      <div class="button-navigation">
-        <button mat-button id="button-help">
-          <mat-icon>help</mat-icon>
-        </button>
-      </div>
-      <div class="button-navigation">
-        <button mat-button id="button-share">
-          Udostępnij obiekt</button>
-      </div>
-      <div class="button-navigation log">
-        <button mat-button id="button-login"
-        >Zaloguj</button>
-      </div>
-      <div class="button-navigation log">
-        <button mat-button id="button-reg"
-        >Zarejestruj się</button>
+      <div class="right-label">
+        <div class="button-navigation">
+          <button id="button-currency" mat-button>PLN</button>
+        </div>
+        <div class="button-navigation">
+          <button id="button-language" mat-button>
+            <mat-icon>language</mat-icon>
+          </button>
+        </div>
+        <div class="button-navigation">
+          <button id="button-help" mat-button>
+            <mat-icon>help</mat-icon>
+          </button>
+        </div>
+        <div class="button-navigation">
+          <button id="button-share" mat-button>Udostępnij obiekt</button>
+        </div>
+        <div class="button-navigation log">
+          <button id="button-login" mat-button>Zaloguj</button>
+        </div>
+        <div class="button-navigation log">
+          <button id="button-reg" mat-button>Zarejestruj się</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="bottom-label">
-    <div class="button-navigation bottom">
-      <button mat-button id="button-bed">
-        <mat-icon>bed</mat-icon>Pobyt</button>
+    <div class="bottom-label">
+      <div class="button-navigation bottom">
+        <a routerLink="/main-page" routerLinkActive="active">
+          <button id="button-bed" mat-button>
+            <mat-icon>bed</mat-icon>Pobyt
+          </button>
+        </a>
+      </div>
+      <div class="button-navigation bottom">
+        <a routerLink="/fly" routerLinkActive="active">
+          <button id="button-airplane" mat-button>
+            <mat-icon>connecting_airports</mat-icon>Loty
+          </button>
+        </a>
+      </div>
+      <div class="button-navigation bottom">
+        <a routerLink="/full" routerLinkActive="active">
+          <button id="button-bedPlane" mat-button>
+            <mat-icon>luggage</mat-icon>Loty+Hotel
+          </button>
+        </a>
+      </div>
+      <div class="button-navigation bottom">
+        <a routerLink="/rentCar" routerLinkActive="active">
+          <button id="button-rentCar" mat-button>
+            <mat-icon>directions_car</mat-icon> Wynajem samochodów
+          </button>
+        </a>
+      </div>
+      <div class="button-navigation bottom">
+        <a routerLink="/trip" routerLinkActive="active">
+          <button id="button-trip" mat-button>
+            <mat-icon>tapas</mat-icon>Atrakcje
+          </button>
+        </a>
+      </div>
+      <div class="button-navigation bottom">
+        <a routerLink="/taxi" routerLinkActive="active">
+          <button id="button-taxi" mat-button>
+            <mat-icon>local_taxi</mat-icon>Taksówki lotniskowe
+          </button>
+        </a>
+      </div>
     </div>
-    <div class="button-navigation bottom">
-      <button mat-button id="button-airplane">
-        <mat-icon>connecting_airports</mat-icon>Loty</button>
-    </div>
-    <div class="button-navigation bottom">
-      <button mat-button id="button-bedPlane">
-        <mat-icon>luggage</mat-icon>Loty+Hotel</button>
-    </div>
-    <div class="button-navigation bottom">
-      <button mat-button id="button-rentCar"><mat-icon>directions_car</mat-icon>
-        Wynajem samochodów</button>
-    </div>
-    <div class="button-navigation bottom">
-      <button mat-button id="button-trip">
-        <mat-icon>tapas</mat-icon>Atrakcje</button>
-    </div>
-    <div class="button-navigation bottom">
-      <button mat-button id="button-taxi">
-        <mat-icon>local_taxi</mat-icon>Taksówki lotniskowe</button>
-    </div>
-  </div>
   </div>
 </div>
-<div class="main-page"></div>
+<div class="main-page title">
+  <div>
+    <div class="content-title">
+      <div class="main-title style-title">
+        <div class="page-title">
+          <header>
+            <h1>
+              <span>Znajdź miejsce na kolejny pobyt</span>
+            </h1>
+          </header>
+          <p>Szukaj ofert hoteli, domów i wielu innych obiektów...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-searchbox"></div>
+</div>
 <div class="main-page"></div>

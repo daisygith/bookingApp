@@ -3,25 +3,27 @@ app-main-page {
     padding: var(--main_spacing_2px) 0 0 0;
   }
 
-  .navigation {
+  .navigation,
+  .content-title {
     background-color: var(--main_background_color);
   }
 
-  .content {
+  .content-nav {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 var(--main_spacing_4px);
   }
 
-  .top-label{
+  .top-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--main_spacing_1px) var(--main_spacing_4px) var(--main_spacing_2px);
+    padding: var(--main_spacing_1px) var(--main_spacing_4px)
+      var(--main_spacing_2px);
     height: 48px;
   }
 
-  .left-label{
+  .left-label {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -34,34 +36,68 @@ app-main-page {
     font-weight: bold;
   }
 
-
-  .right-label, .bottom-label {
+  .right-label,
+  .bottom-label {
     display: flex;
-    gap: 8px
+    gap: 8px;
   }
 
   .button-navigation:hover {
     align-content: center;
-    //height: 48px;
   }
 
-  #button-currency, #button-language, #button-help, #button-share{
+  #button-currency,
+  #button-language,
+  #button-help,
+  #button-share {
     color: var(--main-background_text_color);
   }
 
-  #button-login, #button-reg{
+  #button-login,
+  #button-reg {
     text-align: center;
     background-color: var(--main-background_text_color);
     color: var(--text_color_log) !important;
   }
-//TODO ADD .active when GIVEN type of site will be active
-  //todo border: 1px solid var(--main-background_text_color);
-  #button-bed, #button-airplane, #button-bedPlane, #button-rentCar, #button-trip, #button-taxi{
-    color:var(--main-background_text_color);
+
+  #button-bed,
+  #button-airplane,
+  #button-bedPlane,
+  #button-rentCar,
+  #button-trip,
+  #button-taxi {
+    color: var(--main-background_text_color);
     padding: var(--main_spacing_4px);
     border-radius: var(--radius_button_16px);
     height: 45px;
   }
 
+  .title {
+    background-color: var(--main-background_text_color);
+    border: none;
+    margin-block-end: var(--main_spacing_24px);
+    padding-top: 0;
+  }
+  .content-title {
+    width: 100%;
+    position: relative;
+  }
+  .style-title {
+    min-height: 240px;
+    padding-top: var(--main_spacing_16px);
+  }
+  .main-title {
+    max-width: 1110px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: var(--main_spacing_12px) 5px calc(var(--main_spacing_12px) + 30px);
+    position: relative;
+    display: flex;
+    -webkit-font-smoothing: antialiased;
+  }
 
+  .page-title {
+    margin: 0 auto;
+    max-width: 890px;
+  }
 }

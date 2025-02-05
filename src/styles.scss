@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -20,15 +19,17 @@ $bookingApp-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$bookingApp-theme: mat.define-light-theme((
-  color: (
-    primary: $bookingApp-primary,
-    accent: $bookingApp-accent,
-    warn: $bookingApp-warn,
-  ),
-  typography: mat.define-typography-config(),
-  density: 0
-));
+$bookingApp-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $bookingApp-primary,
+      accent: $bookingApp-accent,
+      warn: $bookingApp-warn,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+  )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -42,30 +43,45 @@ $bookingApp-theme: mat.define-light-theme((
   --main_spacing_1px: 4px;
   --main_spacing_2px: 8px;
   --main_spacing_4px: 16px;
+  --main_spacing_6px: 16px;
+  --main_spacing_8px: 32px;
+  --main_spacing_12px: 48px;
+  --main_spacing_16px: 64px;
+  --main_spacing_24px: 96px;
+  --main_spacing_half: 2px;
 
   //border-radius
   --radius_button_16px: 32px;
 
-
   //color
-  --main_background_color: #003B95;
-  --main-background_text_color: #FFFFFF;
-  --text_color_log: #4AC2F8;
+  --main_background_color: #003b95;
+  --main-background_text_color: #ffffff;
+  --text_color_log: #4ac2f8;
   --text_color: rgba(234, 241, 250, 0.21);
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 //BUTTON
-//button {
-//  color: var(--main-background_text_color);
-//}
-
-
 .mdc-button:hover,
-.mdc-button:active{
+.mdc-button:active {
   background-color: var(--text_color);
+}
+
+.active {
+  #button-bed,
+  #button-airplane,
+  #button-bedPlane,
+  #button-rentCar,
+  #button-trip,
+  #button-taxi {
+    border: 1px solid var(--main-background_text_color);
+  }
 }
